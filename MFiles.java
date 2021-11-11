@@ -1,3 +1,12 @@
+/*
+Counting unique IP's in a large file containing an IP per line.
+The large file is split into a number of smaller files based on the first digit of IP's,
+then the numbers of unique IP's in each smaller file are summed up to produce the total count.
+If the smaller files are not small enough, the large file can be split based on the first two digits,
+or three etc.
+*/
+
+
 import java.util.stream.*;
 import java.nio.file.Files;
 import java.io.IOException;
